@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.alif1.AppiumT1.hybrid_store">
+      <class name="com.alif1.AppiumT1.ApiDemosTest">
         <methods>
           <include name="configureAppium"/>
-          <include name="TestHybrid"/>
+          <include name="GalleryTest"/>
         </methods>
-      </class> <!-- com.alif1.AppiumT1.hybrid_store -->
+      </class> <!-- com.alif1.AppiumT1.ApiDemosTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

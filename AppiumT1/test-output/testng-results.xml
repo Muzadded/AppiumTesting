@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-11T22:20:24 BDT" name="Default suite" finished-at="2023-12-11T22:20:43 BDT" duration-ms="18777">
+  <suite started-at="2023-12-11T23:44:32 BDT" name="Default suite" finished-at="2023-12-11T23:44:40 BDT" duration-ms="7889">
     <groups>
     </groups>
-    <test started-at="2023-12-11T22:20:24 BDT" name="Default test" finished-at="2023-12-11T22:20:43 BDT" duration-ms="18777">
-      <class name="com.alif1.AppiumT1.General_store">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.General_store@74ea2410]" started-at="2023-12-11T22:20:24 BDT" name="configureAppium" finished-at="2023-12-11T22:20:30 BDT" duration-ms="5435" status="PASS">
+    <test started-at="2023-12-11T23:44:32 BDT" name="Default test" finished-at="2023-12-11T23:44:40 BDT" duration-ms="7889">
+      <class name="com.alif1.AppiumT1.ApiDemosTest">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@69e153c5]" started-at="2023-12-11T23:44:32 BDT" name="configureAppium" finished-at="2023-12-11T23:44:37 BDT" duration-ms="4331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="addcartToastmsgTest()[pri:0, instance:com.alif1.AppiumT1.General_store@74ea2410]" started-at="2023-12-11T22:20:30 BDT" name="addcartToastmsgTest" finished-at="2023-12-11T22:20:43 BDT" duration-ms="13309" status="PASS">
+        <test-method signature="GalleryTest()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@69e153c5]" started-at="2023-12-11T23:44:37 BDT" name="GalleryTest" finished-at="2023-12-11T23:44:40 BDT" duration-ms="3531" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addcartToastmsgTest -->
-      </class> <!-- com.alif1.AppiumT1.General_store -->
+        </test-method> <!-- GalleryTest -->
+      </class> <!-- com.alif1.AppiumT1.ApiDemosTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
