@@ -1,0 +1,60 @@
+package com.alif1.AppiumT1;
+
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.google.common.collect.ImmutableMap;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.testng.annotations.BeforeClass;
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+
+public class setup {
+	public AndroidDriver driver;
+	public AppiumDriverLocalService service;
+	
+	@BeforeClass
+	public void configureAppium() throws MalformedURLException, InterruptedException {
+		
+		Map<String , String> env = new HashMap<String , String>(System.getenv());
+		env.put("ANDROID_HOME", "C:\\Users\\Alif-PC\\AppData\\Local\\Android\\Sdk");
+		env.put("JAVA_HOME", "C:\\Program Files\\Java\\jdk-16.0.2");
+		
+		
+		//Create capabilities
+		UiAutomator2Options options = new UiAutomator2Options();
+		options.setDeviceName("demo1");
+		options.setPlatformName("Android");
+		options.setCapability("platformVersion","11.0" );
+		options.setApp("C:\\Users\\Alif-PC\\eclipse-workspace\\AppiumT1\\src\\test\\java\\resources\\General-Store.apk");
+		options.setChromedriverExecutable("G:\\Versity\\FALL 2023\\SQA\\chromedriver.exe");
+		
+		//Create object for android Driver
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options); 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+	}
+	
+	 public void scrollToEnd() {
+    	 boolean canScrollMore;
+ 		do {
+ 		 canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
+ 			    "left", 100, "top", 100, "width", 200, "height", 200,
+ 			    "direction", "down",
+ 			    "percent", 3.0
+ 			));
+ 		
+ 		} while(canScrollMore);
+     }
+     
+     public void scrollToElement(String ele) {
+    	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"ele\"));"));
+     }
+}

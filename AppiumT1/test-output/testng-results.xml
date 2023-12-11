@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-11T04:52:13 BDT" name="Default suite" finished-at="2023-12-11T04:52:58 BDT" duration-ms="44910">
+    <groups>
+    </groups>
+    <test started-at="2023-12-11T04:52:13 BDT" name="Default test" finished-at="2023-12-11T04:52:58 BDT" duration-ms="44910">
+      <class name="com.alif1.AppiumT1.hybrid_store">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.hybrid_store@69e153c5]" started-at="2023-12-11T04:52:13 BDT" name="configureAppium" finished-at="2023-12-11T04:52:18 BDT" duration-ms="5336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method signature="TestHybrid()[pri:0, instance:com.alif1.AppiumT1.hybrid_store@69e153c5]" started-at="2023-12-11T04:52:18 BDT" name="TestHybrid" finished-at="2023-12-11T04:52:58 BDT" duration-ms="39549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestHybrid -->
+      </class> <!-- com.alif1.AppiumT1.hybrid_store -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
