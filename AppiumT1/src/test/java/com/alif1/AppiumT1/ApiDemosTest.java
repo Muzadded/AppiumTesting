@@ -1,6 +1,7 @@
 package com.alif1.AppiumT1;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
@@ -48,6 +49,30 @@ public class ApiDemosTest extends setup_demos {
 		Thread.sleep(2000l);
 	}
 	
-	
+	@Test
+	public void NotificationTest() throws InterruptedException {
+		
+		driver.findElement(AppiumBy.accessibilityId("App")).click();
+		driver.findElement(AppiumBy.accessibilityId("Notification")).click();
+		driver.findElement(AppiumBy.accessibilityId("IncomingMessage")).click();
+		driver.findElement(AppiumBy.accessibilityId("Show App Notification")).click();
+		Thread.sleep(2000l);
+		driver.navigate().back();
+		driver.findElement(AppiumBy.accessibilityId("NotifyWithText")).click();
+		driver.findElement(AppiumBy.accessibilityId("Show Long Notification")).click();
+		Thread.sleep(2000l);
+		//Toast Message
+		//String toastMsg=driver.findElement(By.xpath("(//android.widget.LinearLayout.Toast)[1]")).getAttribute("name");
+		//Assert.assertEquals(toastMsg, "This is a long notification. See,you might need a second more to read it.");
+		driver.navigate().back();
+		driver.findElement(AppiumBy.accessibilityId("Status Bar")).click();
+		driver.findElement(By.xpath("//android.widget.Button[@content-desc=\"Clear notification\"]")).click();
+		Thread.sleep(1000l);
+		driver.findElement(AppiumBy.accessibilityId("Vibrate")).click();
+		Thread.sleep(1000l);
+		driver.findElement(AppiumBy.accessibilityId("Clear notification")).click();
+		Thread.sleep(1000l);
+		driver.navigate().back();
+	}
 	
 }

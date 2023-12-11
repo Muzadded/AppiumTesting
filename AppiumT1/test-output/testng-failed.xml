@@ -6,7 +6,7 @@
       <class name="com.alif1.AppiumT1.ApiDemosTest">
         <methods>
           <include name="configureAppium"/>
-          <include name="animationTest"/>
+          <include name="NotificationTest"/>
         </methods>
       </class> <!-- com.alif1.AppiumT1.ApiDemosTest -->
     </classes>
