@@ -42,17 +42,17 @@ public class hybrid_store extends setup{
 			driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
 			Thread.sleep(6000l);
 			
-			//Type Codenbox in google
+			//Type Appium in google
 			
 			Set<String> contextNames = driver.getContextHandles();
 			
 			for (String contextName : contextNames) {
 			    System.out.println(contextName); 
 			}
-			
+		
 			driver.context("WEBVIEW_com.androidsample.generalstore");
 			Thread.sleep(3000l);
-			driver.findElement(By.name("q")).sendKeys("codenbox");
+			driver.findElement(By.name("q")).sendKeys("Appium");
 			driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 			Thread.sleep(3000l);
 			//Press BAck Button

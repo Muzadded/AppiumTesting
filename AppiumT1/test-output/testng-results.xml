@@ -2,16 +2,16 @@
 <testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-11T21:09:53 BDT" name="Default suite" finished-at="2023-12-11T21:10:11 BDT" duration-ms="17638">
+  <suite started-at="2023-12-11T22:20:24 BDT" name="Default suite" finished-at="2023-12-11T22:20:43 BDT" duration-ms="18777">
     <groups>
     </groups>
-    <test started-at="2023-12-11T21:09:53 BDT" name="Default test" finished-at="2023-12-11T21:10:11 BDT" duration-ms="17638">
+    <test started-at="2023-12-11T22:20:24 BDT" name="Default test" finished-at="2023-12-11T22:20:43 BDT" duration-ms="18777">
       <class name="com.alif1.AppiumT1.General_store">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.General_store@74ea2410]" started-at="2023-12-11T21:09:53 BDT" name="configureAppium" finished-at="2023-12-11T21:09:58 BDT" duration-ms="4311" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.General_store@74ea2410]" started-at="2023-12-11T22:20:24 BDT" name="configureAppium" finished-at="2023-12-11T22:20:30 BDT" duration-ms="5435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="addcartToastmsgTest()[pri:0, instance:com.alif1.AppiumT1.General_store@74ea2410]" started-at="2023-12-11T21:09:58 BDT" name="addcartToastmsgTest" finished-at="2023-12-11T21:10:11 BDT" duration-ms="13299" status="PASS">
+        <test-method signature="addcartToastmsgTest()[pri:0, instance:com.alif1.AppiumT1.General_store@74ea2410]" started-at="2023-12-11T22:20:30 BDT" name="addcartToastmsgTest" finished-at="2023-12-11T22:20:43 BDT" duration-ms="13309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addcartToastmsgTest -->
