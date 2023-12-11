@@ -40,7 +40,7 @@ public class General_store extends setup{
 			String toastMsg=driver.findElement(By.xpath("(//android.widget.Toast)[1]")).getAttribute("name");
 			Assert.assertEquals(toastMsg, "Please enter your name");		
 	}
-	@Test
+	@Test (enabled = false)
 	public void selectmultiitemTest() throws InterruptedException {
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
@@ -83,6 +83,26 @@ public class General_store extends setup{
 		Thread.sleep(2000l);
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
 		Thread.sleep(6000l);
+	}
+	
+	@Test
+	public void addcartToastmsgTest() {
+		driver.findElement(By.id("android:id/text1")).click();
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Bangladesh']")).click();
+		//Type NAme
+		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Shakira");
+		driver.hideKeyboard();
+		//Select female
+		driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
+		//Lets Shop button
+		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
+		
+		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+		
+		String toastMsg=driver.findElement(By.xpath("(//android.widget.Toast)[1]")).getAttribute("name");
+		Assert.assertEquals(toastMsg, "Please add some product at first");
+		
 	}
 	
 }

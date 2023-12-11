@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-11T20:25:13 BDT" name="Default suite" finished-at="2023-12-11T20:26:00 BDT" duration-ms="46812">
+  <suite started-at="2023-12-11T21:09:53 BDT" name="Default suite" finished-at="2023-12-11T21:10:11 BDT" duration-ms="17638">
     <groups>
     </groups>
-    <test started-at="2023-12-11T20:25:13 BDT" name="Default test" finished-at="2023-12-11T20:26:00 BDT" duration-ms="46812">
-      <class name="com.alif1.AppiumT1.hybrid_store">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.hybrid_store@69e153c5]" started-at="2023-12-11T20:25:13 BDT" name="configureAppium" finished-at="2023-12-11T20:25:20 BDT" duration-ms="6602" status="PASS">
+    <test started-at="2023-12-11T21:09:53 BDT" name="Default test" finished-at="2023-12-11T21:10:11 BDT" duration-ms="17638">
+      <class name="com.alif1.AppiumT1.General_store">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.General_store@74ea2410]" started-at="2023-12-11T21:09:53 BDT" name="configureAppium" finished-at="2023-12-11T21:09:58 BDT" duration-ms="4311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="TestHybrid()[pri:0, instance:com.alif1.AppiumT1.hybrid_store@69e153c5]" started-at="2023-12-11T20:25:20 BDT" name="TestHybrid" finished-at="2023-12-11T20:26:00 BDT" duration-ms="40184" status="PASS">
+        <test-method signature="addcartToastmsgTest()[pri:0, instance:com.alif1.AppiumT1.General_store@74ea2410]" started-at="2023-12-11T21:09:58 BDT" name="addcartToastmsgTest" finished-at="2023-12-11T21:10:11 BDT" duration-ms="13299" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestHybrid -->
-      </class> <!-- com.alif1.AppiumT1.hybrid_store -->
+        </test-method> <!-- addcartToastmsgTest -->
+      </class> <!-- com.alif1.AppiumT1.General_store -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
