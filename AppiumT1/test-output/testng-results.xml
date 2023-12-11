@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-11T23:44:32 BDT" name="Default suite" finished-at="2023-12-11T23:44:40 BDT" duration-ms="7889">
+  <suite started-at="2023-12-12T01:13:17 BDT" name="Default suite" finished-at="2023-12-12T01:13:29 BDT" duration-ms="12381">
     <groups>
     </groups>
-    <test started-at="2023-12-11T23:44:32 BDT" name="Default test" finished-at="2023-12-11T23:44:40 BDT" duration-ms="7889">
+    <test started-at="2023-12-12T01:13:17 BDT" name="Default test" finished-at="2023-12-12T01:13:29 BDT" duration-ms="12381">
       <class name="com.alif1.AppiumT1.ApiDemosTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@69e153c5]" started-at="2023-12-11T23:44:32 BDT" name="configureAppium" finished-at="2023-12-11T23:44:37 BDT" duration-ms="4331" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@25ce9dc4]" started-at="2023-12-12T01:13:17 BDT" name="configureAppium" finished-at="2023-12-12T01:13:23 BDT" duration-ms="5503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="GalleryTest()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@69e153c5]" started-at="2023-12-11T23:44:37 BDT" name="GalleryTest" finished-at="2023-12-11T23:44:40 BDT" duration-ms="3531" status="PASS">
+        <test-method signature="SmsSentTesting()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@25ce9dc4]" started-at="2023-12-12T01:13:23 BDT" name="SmsSentTesting" finished-at="2023-12-12T01:13:29 BDT" duration-ms="6853" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GalleryTest -->
+        </test-method> <!-- SmsSentTesting -->
       </class> <!-- com.alif1.AppiumT1.ApiDemosTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
