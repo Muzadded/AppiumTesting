@@ -33,7 +33,7 @@ public class setup {
 		options.setDeviceName("demo1");
 		options.setPlatformName("Android");
 		options.setCapability("platformVersion","11.0" );
-		options.setApp("C:\\Users\\Alif-PC\\eclipse-workspace\\AppiumT1\\src\\test\\java\\resources\\General-Store.apk");
+		options.setApp("C:\\Users\\Alif-PC\\git\\repository\\AppiumT1\\src\\test\\java\\resources\\General-Store.apk");
 		options.setChromedriverExecutable("G:\\Versity\\FALL 2023\\SQA\\chromedriver.exe");
 		
 		//Create object for android Driver
