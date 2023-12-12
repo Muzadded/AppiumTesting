@@ -42,6 +42,7 @@ public class setup {
 		
 	}
 	
+	/*
 	 public void scrollToUp(String element) {
     	 boolean canScrollMore;
  		do {
@@ -50,12 +51,12 @@ public class setup {
  			    "direction", "up",
  			    "percent", 3.0
  			));
- 		//driver.findElement(AppiumBy.accessibilityId("OS")).click()
+ 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"element\"));"));
  		} while(canScrollMore);
      }
 	 
      public void scrollToElement(String ele) {
-    	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"ele\"));"));
+    	
      }
-     
+     */
 }

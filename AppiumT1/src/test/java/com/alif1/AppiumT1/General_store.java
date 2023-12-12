@@ -136,20 +136,19 @@ public class General_store extends setup{
 		driver.navigate().back();
 		
 		
-		//scroll for Air Jordan 1 Mid SE
-		scrollToElement("Air Jordan 1 Mid SE");
-		scrollToUp();
-		//driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air Jordan 1 Mid SE\"));"));
-			//Select Air Jordan 1 Mid SE
+		//scroll for PG 3
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"PG 3\"));"));
+		//Select PG 3
 		int count2=driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
 					
 		for(int i = 0; i<count2; i++) {
 			String item_name = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i).getText();			
-			if(item_name.equalsIgnoreCase("Air Jordan 1 Mid SE")) {
+			if(item_name.equalsIgnoreCase("PG 3")) {
 				driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart")).get(i).click();
 							
 			}
 		}
-		
+		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+		Thread.sleep(2000l);
 	}
 }

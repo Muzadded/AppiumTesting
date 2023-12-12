@@ -2,20 +2,20 @@
 <testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-12T16:00:31 BDT" name="Default suite" finished-at="2023-12-12T16:00:39 BDT" duration-ms="7538">
+  <suite started-at="2023-12-12T16:20:08 BDT" name="Default suite" finished-at="2023-12-12T16:20:41 BDT" duration-ms="33187">
     <groups>
     </groups>
-    <test started-at="2023-12-12T16:00:31 BDT" name="Default test" finished-at="2023-12-12T16:00:39 BDT" duration-ms="7538">
-      <class name="com.alif1.AppiumT1.ApiDemosTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@17f62e33]" started-at="2023-12-12T16:00:31 BDT" name="configureAppium" finished-at="2023-12-12T16:00:37 BDT" duration-ms="5479" status="PASS">
+    <test started-at="2023-12-12T16:20:08 BDT" name="Default test" finished-at="2023-12-12T16:20:41 BDT" duration-ms="33187">
+      <class name="com.alif1.AppiumT1.General_store">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.General_store@69e153c5]" started-at="2023-12-12T16:20:08 BDT" name="configureAppium" finished-at="2023-12-12T16:20:13 BDT" duration-ms="5207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="ExtractTextTest()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@17f62e33]" started-at="2023-12-12T16:00:37 BDT" name="ExtractTextTest" finished-at="2023-12-12T16:00:39 BDT" duration-ms="2029" status="PASS">
+        <test-method signature="GetBackAddMoreTest()[pri:0, instance:com.alif1.AppiumT1.General_store@69e153c5]" started-at="2023-12-12T16:20:13 BDT" name="GetBackAddMoreTest" finished-at="2023-12-12T16:20:41 BDT" duration-ms="27951" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExtractTextTest -->
-      </class> <!-- com.alif1.AppiumT1.ApiDemosTest -->
+        </test-method> <!-- GetBackAddMoreTest -->
+      </class> <!-- com.alif1.AppiumT1.General_store -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
