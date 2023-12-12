@@ -105,7 +105,7 @@ public class General_store extends setup{
 		
 	}
 	
-	@Test
+	@Test (enabled = false)
 	public void GetBackAddMoreTest() throws InterruptedException {
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
@@ -150,5 +150,50 @@ public class General_store extends setup{
 		}
 		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
 		Thread.sleep(2000l);
+	}
+	
+	@Test
+	public void UndoAddtoCartTest() throws InterruptedException {
+		driver.findElement(By.id("android:id/text1")).click();
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Bangladesh']")).click();
+		//Type NAme
+		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Shakira");
+		driver.hideKeyboard();
+		//Select female
+		driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
+		//Lets Shop button
+		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
+		
+		//scroll for Air Jordan 9 Retro
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air Jordan 9 Retro\"));"));
+		//Select Air Jordan 9 Retro
+		int count1=driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
+					
+		for(int i = 0; i<count1; i++) {
+			String item_name = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i).getText();			
+			if(item_name.equalsIgnoreCase("Air Jordan 9 Retro")) {
+				driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart")).get(i).click();
+							
+			}
+		}
+		//
+		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+		Thread.sleep(1000l);
+		driver.navigate().back();
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air Jordan 9 Retro\"));"));
+		//Select Air Jordan 9 Retro
+		int count2=driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
+					
+		for(int i = 0; i<count2; i++) {
+			String item_name = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i).getText();			
+			if(item_name.equalsIgnoreCase("Air Jordan 9 Retro")) {
+				driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart")).get(i).click();
+							
+			}
+		}
+		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+		String toastMsg=driver.findElement(By.xpath("(//android.widget.Toast)[1]")).getAttribute("name");
+		Assert.assertEquals(toastMsg, "Please add some product at first");
 	}
 }

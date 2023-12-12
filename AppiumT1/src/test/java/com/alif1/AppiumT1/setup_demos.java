@@ -41,7 +41,7 @@ public class setup_demos {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 	}
-	
+	/*
 	 public void scrollToEnd() {
     	 boolean canScrollMore;
  		do {
@@ -57,4 +57,5 @@ public class setup_demos {
      public void scrollToElement(String ele) {
     	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"ele\"));"));
      }
+     */
 }
