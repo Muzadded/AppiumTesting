@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-12T01:39:39 BDT" name="Default suite" finished-at="2023-12-12T01:39:59 BDT" duration-ms="20561">
+  <suite started-at="2023-12-12T16:00:31 BDT" name="Default suite" finished-at="2023-12-12T16:00:39 BDT" duration-ms="7538">
     <groups>
     </groups>
-    <test started-at="2023-12-12T01:39:39 BDT" name="Default test" finished-at="2023-12-12T01:39:59 BDT" duration-ms="20561">
+    <test started-at="2023-12-12T16:00:31 BDT" name="Default test" finished-at="2023-12-12T16:00:39 BDT" duration-ms="7538">
       <class name="com.alif1.AppiumT1.ApiDemosTest">
-        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@74ea2410]" started-at="2023-12-12T01:39:39 BDT" name="configureAppium" finished-at="2023-12-12T01:39:45 BDT" duration-ms="5688" status="PASS">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@17f62e33]" started-at="2023-12-12T16:00:31 BDT" name="configureAppium" finished-at="2023-12-12T16:00:37 BDT" duration-ms="5479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureAppium -->
-        <test-method signature="NotificationTest()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@74ea2410]" started-at="2023-12-12T01:39:45 BDT" name="NotificationTest" finished-at="2023-12-12T01:39:59 BDT" duration-ms="14847" status="PASS">
+        <test-method signature="ExtractTextTest()[pri:0, instance:com.alif1.AppiumT1.ApiDemosTest@17f62e33]" started-at="2023-12-12T16:00:37 BDT" name="ExtractTextTest" finished-at="2023-12-12T16:00:39 BDT" duration-ms="2029" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- NotificationTest -->
+        </test-method> <!-- ExtractTextTest -->
       </class> <!-- com.alif1.AppiumT1.ApiDemosTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

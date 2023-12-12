@@ -42,19 +42,20 @@ public class setup {
 		
 	}
 	
-	 public void scrollToEnd() {
+	 public void scrollToUp(String element) {
     	 boolean canScrollMore;
  		do {
  		 canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
  			    "left", 100, "top", 100, "width", 200, "height", 200,
- 			    "direction", "down",
+ 			    "direction", "up",
  			    "percent", 3.0
  			));
- 		
+ 		//driver.findElement(AppiumBy.accessibilityId("OS")).click()
  		} while(canScrollMore);
      }
-     
+	 
      public void scrollToElement(String ele) {
     	driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"ele\"));"));
      }
+     
 }

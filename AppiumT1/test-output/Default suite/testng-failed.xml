@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.alif1.AppiumT1.ApiDemosTest">
+      <class name="com.alif1.AppiumT1.General_store">
         <methods>
           <include name="configureAppium"/>
-          <include name="NotificationTest"/>
+          <include name="GetBackAddMoreTest"/>
         </methods>
-      </class> <!-- com.alif1.AppiumT1.ApiDemosTest -->
+      </class> <!-- com.alif1.AppiumT1.General_store -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

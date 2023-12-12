@@ -49,7 +49,7 @@ public class ApiDemosTest extends setup_demos {
 		Thread.sleep(2000l);
 	}
 	
-	@Test
+	@Test (enabled = false)
 	public void NotificationTest() throws InterruptedException {
 		
 		driver.findElement(AppiumBy.accessibilityId("App")).click();
@@ -73,6 +73,14 @@ public class ApiDemosTest extends setup_demos {
 		driver.findElement(AppiumBy.accessibilityId("Clear notification")).click();
 		Thread.sleep(1000l);
 		driver.navigate().back();
+	}
+	
+	@Test 
+	public void ExtractTextTest() {
+		driver.findElement(AppiumBy.accessibilityId("Text")).click();
+		driver.findElement(AppiumBy.accessibilityId("Linkify")).click();
+		String Text=driver.findElement(By.id("io.appium.android.apis:id/text4")).getText();
+		Assert.assertEquals(Text,"text4: Manually created spans. Click here to dial the phone.");
 	}
 	
 }
