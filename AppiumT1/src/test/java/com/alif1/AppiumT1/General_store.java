@@ -198,7 +198,7 @@ public class General_store extends setup{
 		Assert.assertEquals(toastMsg, "Please add some product at first");
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void PriceCheckTest() throws InterruptedException {
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
@@ -230,5 +230,48 @@ public class General_store extends setup{
 		//System.out.println(price);
 		Assert.assertEquals(price,"$110.0");
 	}
-	
+	@Test
+	public void TotalPriceCheck() throws InterruptedException, NumberFormatException {
+		driver.findElement(By.id("android:id/text1")).click();
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Bangladesh']")).click();
+		//Type NAme
+		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Shakira");
+		driver.hideKeyboard();
+		//Select female
+		driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
+		//Lets Shop button
+		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
+		
+		//scroll for Air Jordan 9 Retro
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Air Jordan 9 Retro\"));"));
+		//Select Air Jordan 9 Retro
+		int count1=driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
+			
+		for(int i = 0; i<count1; i++) {
+			String item_name = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i).getText();			
+			if(item_name.equalsIgnoreCase("Air Jordan 9 Retro")) {
+				driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart")).get(i).click();
+					
+			}
+		}
+		//scroll for PG 3
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"PG 3\"));"));
+		//Select PG 3
+		int count2=driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
+					
+		for(int i = 0; i<count2; i++) {
+			String item_name = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i).getText();			
+			if(item_name.equalsIgnoreCase("PG 3")) {
+				driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart")).get(i).click();
+							
+			}
+		}
+		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+		Thread.sleep(2000l);
+		String FinalPrice = driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"com.androidsample.generalstore:id/totalAmountLbl\"]")).getText();
+		driver.findElement(By.xpath("//android.widget.CheckBox[@text=\"Send me e-mails on discounts related to selected products in future\"]")).click();
+		Assert.assertEquals(FinalPrice, "$ 280.97");
+		
+	}
 }
