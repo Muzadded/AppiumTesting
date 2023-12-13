@@ -5,8 +5,8 @@
     <classes>
       <class name="com.alif1.AppiumT1.General_store">
         <methods>
+          <include name="PriceCheckTest"/>
           <include name="configureAppium"/>
-          <include name="GetBackAddMoreTest"/>
         </methods>
       </class> <!-- com.alif1.AppiumT1.General_store -->
     </classes>
