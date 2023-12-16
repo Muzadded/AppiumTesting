@@ -41,22 +41,4 @@ public class setup {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 	}
-	
-	/*
-	 public void scrollToUp(String element) {
-    	 boolean canScrollMore;
- 		do {
- 		 canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
- 			    "left", 100, "top", 100, "width", 200, "height", 200,
- 			    "direction", "up",
- 			    "percent", 3.0
- 			));
- 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"element\"));"));
- 		} while(canScrollMore);
-     }
-	 
-     public void scrollToElement(String ele) {
-    	
-     }
-     */
 }

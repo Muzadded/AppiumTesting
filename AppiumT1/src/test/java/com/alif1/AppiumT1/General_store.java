@@ -11,7 +11,7 @@ import io.appium.java_client.AppiumBy;
 public class General_store extends setup{
 	
 	@Test (enabled = false)
-	public void dropDownTest() {
+	public void LoginTest() {
 		
 		//Scroll Select Argentina
 		driver.findElement(By.id("android:id/text1")).click();
@@ -231,7 +231,7 @@ public class General_store extends setup{
 		Assert.assertEquals(price,"$110.0");
 	}
 	@Test
-	public void TotalPriceCheck() throws InterruptedException, NumberFormatException {
+	public void TotalPriceCheckTest() throws InterruptedException, NumberFormatException {
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Bangladesh']")).click();
