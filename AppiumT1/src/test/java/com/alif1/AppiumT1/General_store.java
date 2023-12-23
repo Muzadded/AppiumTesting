@@ -42,6 +42,38 @@ public class General_store extends setup{
 			Assert.assertEquals(toastMsg, "Please enter your name");		
 	}
 	@Test (enabled = false)
+	public void addtocartTest() throws InterruptedException {
+		driver.findElement(By.id("android:id/text1")).click();
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Bangladesh']")).click();
+		//Type NAme
+		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Shakira");
+		driver.hideKeyboard();
+		//Select female
+		driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
+		//Lets Shop button
+		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
+		
+		//scroll for Converse All Star
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Converse All Star\"));"));
+		//Select Converse All Star
+		int count1=driver.findElements(By.id("com.androidsample.generalstore:id/productName")).size();
+		for(int i = 0; i<count1; i++) {
+			String item_name = driver.findElements(By.id("com.androidsample.generalstore:id/productName")).get(i).getText();
+			
+			if(item_name.equalsIgnoreCase("Converse All Star")) {
+				driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart")).get(i).click();
+				
+			}
+		}
+		
+		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+		Thread.sleep(2000l);
+		driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
+		Thread.sleep(6000l);
+	}
+	
+	@Test (enabled = false)
 	public void selectmultiitemTest() throws InterruptedException {
 		driver.findElement(By.id("android:id/text1")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Bangladesh\"));"));
